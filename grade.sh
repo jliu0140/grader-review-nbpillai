@@ -33,7 +33,7 @@ cat out.txt
 
 if [[ $NUM_FAILED -gt 0 ]]
 then
-    echo "1 test failed."
+    grep "failure:" out.txt
     exit 0
 else
     echo "All tests passed."
